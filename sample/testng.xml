@@ -4,7 +4,7 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="Sample.sample.AppTest"/>
-        <class name="Sample.sample.AppDone"/>
+        <class name="Sample.sample.AppDne"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

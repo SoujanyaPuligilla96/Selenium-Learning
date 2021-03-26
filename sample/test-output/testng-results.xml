@@ -1,21 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4928" started-at="2021-03-26T22:28:03 IST" finished-at="2021-03-26T22:28:08 IST">
+  <suite name="Suite" duration-ms="4250" started-at="2021-03-26T22:46:59 IST" finished-at="2021-03-26T22:47:04 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4928" started-at="2021-03-26T22:28:03 IST" finished-at="2021-03-26T22:28:08 IST">
+    <test name="Test" duration-ms="4250" started-at="2021-03-26T22:46:59 IST" finished-at="2021-03-26T22:47:04 IST">
+      <class name="Sample.sample.AppTest">
+        <test-method status="PASS" signature="testApp()[pri:0, instance:Sample.sample.AppTest@59e5ddf]" name="testApp" duration-ms="14" started-at="2021-03-26T22:46:59 IST" finished-at="2021-03-26T22:47:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testApp -->
+      </class> <!-- Sample.sample.AppTest -->
       <class name="Sample.sample.AppDne">
-        <test-method status="PASS" signature="chromeTest()[pri:0, instance:Sample.sample.AppDne@646d64ab]" name="chromeTest" duration-ms="4897" started-at="2021-03-26T22:28:03 IST" finished-at="2021-03-26T22:28:08 IST">
+        <test-method status="FAIL" signature="chromeTest()[pri:0, instance:Sample.sample.AppDne@536aaa8d]" name="chromeTest" duration-ms="4179" started-at="2021-03-26T22:47:00 IST" finished-at="2021-03-26T22:47:04 IST">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=85.0.4183.121)
+Build info: version: '4.0.0-alpha-5', revision: 'b3a0d621cc'
+System info: host: 'ETG-Soujanya', ip: '192.168.0.106', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-136-generic', java.version: '1.8.0_282'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /tmp/.com.google.Chrome.zk4DRt}, goog:chromeOptions: {debuggerAddress: localhost:36931}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4d742bd3f06b917a8db79f01cddbd2de]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=85.0.4183.121)
+Build info: version: '4.0.0-alpha-5', revision: 'b3a0d621cc'
+System info: host: 'ETG-Soujanya', ip: '192.168.0.106', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-136-generic', java.version: '1.8.0_282'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /tmp/.com.google.Chrome.zk4DRt}, goog:chromeOptions: {debuggerAddress: localhost:36931}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4d742bd3f06b917a8db79f01cddbd2de
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:639)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
+at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:287)
+at Sample.sample.AppDne.chromeTest(AppDne.java:22)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chromeTest -->
-        <test-method status="PASS" signature="testApp()[pri:0, instance:Sample.sample.AppDne@646d64ab]" name="testApp" duration-ms="1" started-at="2021-03-26T22:28:08 IST" finished-at="2021-03-26T22:28:08 IST">
+        <test-method status="PASS" signature="testApp()[pri:0, instance:Sample.sample.AppDne@536aaa8d]" name="testApp" duration-ms="2" started-at="2021-03-26T22:47:04 IST" finished-at="2021-03-26T22:47:04 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testApp -->
       </class> <!-- Sample.sample.AppDne -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
